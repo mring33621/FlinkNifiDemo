@@ -1,5 +1,5 @@
 # FlinkNifiDemo
-Setup instructions for my recent Flink-NiFi demo.
+## Setup instructions for my recent Flink-NiFi demo.
 
 [Refer to the Demo Slides](http://www.slideshare.net/mring33/flink-and-nifi-two-stars-in-the-apache-big-data-constellation)
 
@@ -19,7 +19,14 @@ Setup instructions for my recent Flink-NiFi demo.
   * nifi-nats-nar-x.y.z.nar
 6. Run the gnatsd server
 7. Run NiFi then import the FlinkNifiDemoFlow.xml file
-8. Unzip var.zip into your /var dir
+8. Unzip var.zip into your /var dir (be careful, back up anything already there before you unzip my stuff)
 9. Run DemoFlinkEngines com.mattring.demoflinkengines.EnginesMain
 10. Run StreamVisServer com.mattring.streamvisserver.ServerMain
 11. Point your browser to http://localhost:4567/DemoPages/dashboard.html to watch the fun
+
+# Notes:
+1. This is a DEMO. Most of the code is of the random, pretend-to-work type.
+2. There are several hard-coded expectations:
+  * Everything in the /var path (see step 8, above)
+  * NATS server at localhost:4222
+ 
